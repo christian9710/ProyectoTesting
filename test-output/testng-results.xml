@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-28T15:42:32 CST" name="Suite" finished-at="2022-07-28T15:42:33 CST" duration-ms="183">
+  <suite started-at="2022-07-28T16:20:22 CST" name="Suite" finished-at="2022-07-28T16:20:22 CST" duration-ms="177">
     <groups>
     </groups>
-    <test started-at="2022-07-28T15:42:32 CST" name="TestFiltroProductosPorMarca_Escenario1" finished-at="2022-07-28T15:42:33 CST" duration-ms="183">
+    <test started-at="2022-07-28T16:20:22 CST" name="TestFiltroProductosPorMarca_Escenario1" finished-at="2022-07-28T16:20:22 CST" duration-ms="177">
       <class name="Test_Scenarios.TestFiltrarProductosPorMarca_Escenario1">
-        <test-method is-config="true" signature="InitialSetUp(java.lang.String,java.lang.String)[pri:0, instance:Test_Scenarios.TestFiltrarProductosPorMarca_Escenario1@b9b00e0]" started-at="2022-07-28T15:42:32 CST" name="InitialSetUp" finished-at="2022-07-28T15:42:33 CST" duration-ms="59" status="FAIL">
+        <test-method is-config="true" signature="InitialSetUp(java.lang.String,java.lang.String)[pri:0, instance:Test_Scenarios.TestFiltrarProductosPorMarca_Escenario1@b9b00e0]" started-at="2022-07-28T16:20:22 CST" name="InitialSetUp" finished-at="2022-07-28T16:20:22 CST" duration-ms="58" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -31,9 +31,9 @@ at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService
 at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
 at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
 at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
-at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:142)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:70)
-at Test_Scenarios.BaseTest.InitialSetUp(BaseTest.java:29)
+at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+at Test_Scenarios.BaseTest.InitialSetUp(BaseTest.java:28)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -66,11 +66,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitialSetUp -->
-        <test-method is-config="true" signature="methodLevelSetUp()[pri:0, instance:Test_Scenarios.TestFiltrarProductosPorMarca_Escenario1@b9b00e0]" started-at="2022-07-28T15:42:33 CST" name="methodLevelSetUp" finished-at="2022-07-28T15:42:33 CST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="methodLevelSetUp()[pri:0, instance:Test_Scenarios.TestFiltrarProductosPorMarca_Escenario1@b9b00e0]" started-at="2022-07-28T16:20:22 CST" name="methodLevelSetUp" finished-at="2022-07-28T16:20:22 CST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodLevelSetUp -->
-        <test-method signature="testEscenario1()[pri:0, instance:Test_Scenarios.TestFiltrarProductosPorMarca_Escenario1@b9b00e0]" started-at="2022-07-28T15:42:33 CST" name="testEscenario1" finished-at="2022-07-28T15:42:33 CST" duration-ms="0" status="SKIP">
+        <test-method signature="testEscenario1()[pri:0, instance:Test_Scenarios.TestFiltrarProductosPorMarca_Escenario1@b9b00e0]" started-at="2022-07-28T16:20:22 CST" name="testEscenario1" finished-at="2022-07-28T16:20:22 CST" duration-ms="0" status="SKIP">
           <exception class="java.lang.IllegalStateException">
             <message>
               <![CDATA[The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads]]>
@@ -82,9 +82,9 @@ at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService
 at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
 at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
 at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
-at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:142)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:70)
-at Test_Scenarios.BaseTest.InitialSetUp(BaseTest.java:29)
+at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+at Test_Scenarios.BaseTest.InitialSetUp(BaseTest.java:28)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -117,7 +117,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEscenario1 -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Scenarios.TestFiltrarProductosPorMarca_Escenario1@b9b00e0]" started-at="2022-07-28T15:42:33 CST" name="teardown" finished-at="2022-07-28T15:42:33 CST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Scenarios.TestFiltrarProductosPorMarca_Escenario1@b9b00e0]" started-at="2022-07-28T16:20:22 CST" name="teardown" finished-at="2022-07-28T16:20:22 CST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

@@ -4,7 +4,6 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -24,10 +23,9 @@ public class BaseTest {
     @BeforeClass
     public void InitialSetUp(String browser, String url)
     {
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("start-maximized");
-        driver = new ChromeDriver(options);
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        System.setProperty("webdriver.chrome.drive", ".src/test/resources/chromedriver/chromedriver.exe");
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
         driver.get(url);
         this.LP = new LoginPage(driver);
         this.HP = new HomePage(driver);
