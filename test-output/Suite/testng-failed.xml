@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="correo" value="correo@correo.com"/>
+  <parameter name="contrasena" value="ALGUNA-CONTRASENA"/>
+  <parameter name="Url" value="https://www.automercado.cr/"/>
+  <parameter name="Browser" value="Chrome"/>
+  <test thread-count="5" name="TestFiltroProductosPorMarca_Escenario1(failed)">
+    <classes>
+      <class name="Test_Scenarios.TestFiltrarProductosPorMarca_Escenario1">
+        <methods>
+          <include name="InitialSetUp"/>
+          <include name="methodLevelSetUp"/>
+          <include name="teardown"/>
+          <include name="testEscenario1"/>
+        </methods>
+      </class> <!-- Test_Scenarios.TestFiltrarProductosPorMarca_Escenario1 -->
+    </classes>
+  </test> <!-- TestFiltroProductosPorMarca_Escenario1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
