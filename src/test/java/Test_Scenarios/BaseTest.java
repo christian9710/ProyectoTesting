@@ -24,10 +24,10 @@ public class BaseTest {
     @BeforeClass
     public void InitialSetUp(String browser, String url)
     {
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("start-maximized");
-        driver = new ChromeDriver(options);
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
+    	System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/chromedriver");
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
         driver.get(url);
         this.LP = new LoginPage(driver);
         this.HP = new HomePage(driver);
