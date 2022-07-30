@@ -23,7 +23,7 @@ public class BaseTest {
     public void InitialSetUp(String browser, String url)
     {
 
-    	System.setProperty("webdriver.chrome.driver", "/Users/monicazuniga/Downloads/chromedriver");
+    	System.setProperty("webdriver.chrome.driver", "C:/Users/Yozzco/Documents/chromedriver.exe");
     	ChromeOptions options = new ChromeOptions(); 
     	options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
         driver = new ChromeDriver(options);
