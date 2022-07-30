@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 import Objects.BasePage;
 
-public class VaciarCarritoComprasPage extends BasePage{
+public class GuardarCarritoComprasPage extends BasePage{
 	  public By btnAgregarProducto = By.xpath("(//button/span[text()[contains(.,'Agregar')]])[1]");
 	    public By btnCloseTutorial = By.xpath("//img[@ng-click='onCloseAudioTutorialModal()']");
 	    public By btnPickUpEntrega = By.xpath("//button[@ng-click=\"selectDeliveryType('pickUp')\"]");
@@ -22,7 +22,7 @@ public class VaciarCarritoComprasPage extends BasePage{
 	    public By btnCrearLista = By.xpath("//button[text()='Crear']");
 	    public By btnOkCrearLista = By.xpath("//button[text()='OK']");
 
-	    public VaciarCarritoComprasPage(WebDriver driver) {
+	    public GuardarCarritoComprasPage(WebDriver driver) {
 	        super(driver);
 	    }
 

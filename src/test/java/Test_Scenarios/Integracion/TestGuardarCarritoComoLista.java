@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import Objects.HomePage;
 import Objects.LoginPage;
 import Objects.BusquedaPage.BuscarProductosPage;
-import Objects.CarritoComprasPages.VaciarCarritoComprasPage;
+import Objects.CarritoComprasPages.GuardarCarritoComprasPage;
 import Test_Scenarios.BaseTest;
 
 public class TestGuardarCarritoComoLista extends BaseTest {
@@ -15,7 +15,7 @@ public class TestGuardarCarritoComoLista extends BaseTest {
 	public BuscarProductosPage BPP;
 	public LoginPage LP;
 	public HomePage HP;
-	public VaciarCarritoComprasPage VCCP;
+	public GuardarCarritoComprasPage VCCP;
 	
 	 @Parameters({"correo","contrasena","producto","nombreLista"})
 	    @Test
@@ -52,7 +52,7 @@ public class TestGuardarCarritoComoLista extends BaseTest {
 	    {
 	        BPP = new BuscarProductosPage(driver);
 	        LP = new LoginPage(driver);
-	        VCCP = new VaciarCarritoComprasPage(driver);
+	        VCCP = new GuardarCarritoComprasPage(driver);
 	        HP  = new HomePage(driver);
 	    }
 

@@ -6,13 +6,13 @@ import org.testng.annotations.Test;
 
 import Objects.CarritoComprasPages.AgregarProductosDesdeListaComprasPage;
 import Objects.CarritoComprasPages.ListaProductosPage;
-import Objects.CarritoComprasPages.VaciarCarritoComprasPage;
+import Objects.CarritoComprasPages.GuardarCarritoComprasPage;
 import Test_Scenarios.BaseTest;
 
 public class TestAgregarProductosDesdeLista extends BaseTest {
 	public AgregarProductosDesdeListaComprasPage APLCP;
 	public ListaProductosPage LPP;
-	public VaciarCarritoComprasPage VCCP;
+	public GuardarCarritoComprasPage VCCP;
 
     @Parameters({"correo","contrasena"})
     @Test
@@ -43,7 +43,7 @@ public class TestAgregarProductosDesdeLista extends BaseTest {
     {
     	APLCP = new AgregarProductosDesdeListaComprasPage(driver);
     	LPP = new ListaProductosPage(driver);
-    	VCCP = new VaciarCarritoComprasPage(driver);
+    	VCCP = new GuardarCarritoComprasPage(driver);
     }
 
 }

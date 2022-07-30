@@ -1,7 +1,9 @@
-package Objects;
+package Objects.BusquedaPage;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+
+import Objects.BasePage;
 
 public class BusquedaProductoPage extends BasePage{
 	

@@ -4,12 +4,12 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import Objects.CarritoComprasPages.VaciarCarritoComprasPage;
+import Objects.CarritoComprasPages.GuardarCarritoComprasPage;
 import Test_Scenarios.BaseTest;
 
 public class TestVaciarCarritoCompras extends BaseTest {
 	
-	public VaciarCarritoComprasPage VCCP;
+	public GuardarCarritoComprasPage VCCP;
 	
 	 @Parameters({"correo","contrasena"})
 	    @Test
@@ -29,6 +29,6 @@ public class TestVaciarCarritoCompras extends BaseTest {
 	  @BeforeMethod
 	    public void methodLevelSetUp()
 	    {
-		  VCCP = new VaciarCarritoComprasPage(driver);
+		  VCCP = new GuardarCarritoComprasPage(driver);
 	    }
 }
