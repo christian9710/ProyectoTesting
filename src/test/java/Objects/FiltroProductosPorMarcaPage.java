@@ -2,42 +2,31 @@ package Objects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
 
 public class FiltroProductosPorMarcaPage extends BasePage{
 
-
-    By btnCategorias = By.xpath("//span[@class='menu-bg wText' and @id = 'boton-categorias' and text()= 'Comprá por categorías']");
-    By btnAbarrotes = By.xpath("//li[contains(text(), 'Abarrotes') and @class='multilevel-dropdown-item has-children']");
-    By btnCereales = By.xpath("//li[contains(text(), 'Cereales') and @class='multilevel-dropdown-item']");
-    By marcaKellogs = By.xpath("//input[@type='checkbox' and @class='ais-RefinementList-checkbox' and @value='KELLOGGS']");
-    By btnCongeladosRefrigerados = By.xpath("//li[contains(text(), 'Congelados y refrigerados') and @class='multilevel-dropdown-item has-children']");
-    By btnCongelados = By.xpath("//li[contains(text(), 'Congelados') and @class='multilevel-dropdown-item']");
-    By marcaEggo = By.xpath("//input[@type='checkbox' and @class='ais-RefinementList-checkbox' and @value='EGGO']");
-
-
+    By btnAbarrotes =  By.xpath("html/body/am-main/div[2]/am-home/am-explore-products/div/section/div/div/div[2]/div/div/drag-scroll/div/div[1]/am-product-category/div/div[1]/img");
+    By btnDesplegarMarcas = By.xpath("/html/body/am-main/div[2]/am-product-search/div/div/div/div[1]/am-product-filter/div[4]/div[1]/img");
+    By marcaDelMonte = By.xpath("/html/body/am-main/div[2]/am-product-search/div/div/div/div[1]/am-product-filter/div[4]/div[2]/div[2]/div");
+    By lataMelocoton = By.xpath("/html/body/am-main/div[2]/am-product-search/div/div/div/div[2]/div/div[2]/div/div[3]/am-product-list/div/div/div/div/div/div[3]/a/span");
+    
     public FiltroProductosPorMarcaPage(WebDriver driver){
         super(driver);
     }
 
-    public void clickCategorias() {
-        click(btnCategorias);
-    }
     public void clickOpcionAbarrotes() {
         click(btnAbarrotes);
     }
-    public void clickOpcionCereales() {
-        click(btnCereales);
+    public void clickOpcionVerMarcas() {
+        click(btnDesplegarMarcas);
     }
-    public void seleccionarMarcaCerales() {
-        click(marcaKellogs);
+    public void seleccionarMarcaDelMonte() {
+        click(marcaDelMonte);
     }
-    public void clickOpcionCongeladosRefrigerados() {
-        click(btnCongeladosRefrigerados);
+    public boolean encontrarLataMelocoton() {
+    	return isDisplayed(lataMelocoton);
     }
-    public void clickOpcionCongelados() {
-        click(btnCongelados);
-    }
-    public void seleccionarMarcaCongelados() {
-        click(marcaEggo);
-    }
+ 
+
 }

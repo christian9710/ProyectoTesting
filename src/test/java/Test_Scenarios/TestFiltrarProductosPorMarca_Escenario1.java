@@ -1,11 +1,11 @@
 package Test_Scenarios;
 
 import org.testng.annotations.Test;
-import org.testng.annotations.Test;
-import org.testng.annotations.Test;
-import org.testng.annotations.Test;
+
+import static org.testng.Assert.assertTrue;
+
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+
 
 import Objects.FiltroProductosPorMarcaPage;
 
@@ -16,14 +16,14 @@ public class TestFiltrarProductosPorMarca_Escenario1 extends BaseTest {
 
     @Test
     public void testEscenario1() throws InterruptedException {
-        FPPM.clickCategorias();
-        Thread.sleep(5000);
         FPPM.clickOpcionAbarrotes();
         Thread.sleep(5000);
-        FPPM.clickOpcionCereales();
+        FPPM.clickOpcionVerMarcas();
         Thread.sleep(5000);
-        FPPM.seleccionarMarcaCerales();
-        Thread.sleep(5000);
+        FPPM.seleccionarMarcaDelMonte();
+        Thread.sleep(10000);
+        assertTrue(FPPM.encontrarLataMelocoton(),"No se encuentra");
+        
     }
 
     @BeforeMethod

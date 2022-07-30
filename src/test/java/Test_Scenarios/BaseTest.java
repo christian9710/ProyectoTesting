@@ -1,7 +1,5 @@
 package Test_Scenarios;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -25,8 +23,10 @@ public class BaseTest {
     public void InitialSetUp(String browser, String url)
     {
 
-    	System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/chromedriver");
-        driver = new ChromeDriver();
+    	System.setProperty("webdriver.chrome.driver", "/Users/monicazuniga/Downloads/chromedriver");
+    	ChromeOptions options = new ChromeOptions(); 
+    	options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
+        driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         driver.get(url);
         this.LP = new LoginPage(driver);
