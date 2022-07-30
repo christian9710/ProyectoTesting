@@ -5,8 +5,9 @@ import org.openqa.selenium.WebDriver;
 
 public class BusquedaProductoPage extends BasePage{
 	
-    public By inputBusqueda = By.xpath("/html/body/am-main/div[1]/am-navbar/nav/div[1]/div/ul/div[2]/li/am-product-search-navbar/form/span/input");
-
+    public By inputBusqueda = By.xpath("//input[@class='dropdown-toggle form-control am-shadow am-shadow-lg-none w-100' and @type = 'search' and @placeholder= 'Buscá un producto']");
+    By chocolateResult = By.xpath("/html/body/am-main/div[2]/am-product-search/div/div/div/div[2]/div/div[3]/div/div[1]/am-product-list/div/div/div/div/div/div[3]/a/span");
+    	
     public BusquedaProductoPage(WebDriver driver){
         super(driver);
     }
@@ -14,12 +15,11 @@ public class BusquedaProductoPage extends BasePage{
     public void clickInputBusqueda() {
         click(inputBusqueda);
     }
-    public void ingresarProducto(String producto) {
+    public void buscarProducto(String producto) {
         sendKeys(inputBusqueda, producto);
     }
-    
-    public void presionarEnter() {
-    	pressEnterOnElement(inputBusqueda);
+    public boolean encontrarResultado() {
+    	return isDisplayed(chocolateResult);
     }
 
 }

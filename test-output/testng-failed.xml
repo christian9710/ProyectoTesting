@@ -5,16 +5,17 @@
   <parameter name="contrasena" value="ALGUNA-CONTRASENA"/>
   <parameter name="Url" value="https://www.automercado.cr/"/>
   <parameter name="Browser" value="Chrome"/>
-  <test thread-count="5" name="TestFiltroProductosPorMarca_Escenario1(failed)">
+  <test thread-count="5" name="TestBusquedaProducto_Escenario1(failed)">
+    <parameter name="producto" value="chocolate"/>
     <classes>
-      <class name="Test_Scenarios.TestFiltrarProductosPorMarca_Escenario1">
+      <class name="Test_Scenarios.TestBuscarProducto_Escenario1">
         <methods>
           <include name="InitialSetUp"/>
-          <include name="methodLevelSetUp"/>
+          <include name="testEscenario1" invocation-numbers="0"/>
           <include name="teardown"/>
-          <include name="testEscenario1"/>
+          <include name="methodLevelSetUp"/>
         </methods>
-      </class> <!-- Test_Scenarios.TestFiltrarProductosPorMarca_Escenario1 -->
+      </class> <!-- Test_Scenarios.TestBuscarProducto_Escenario1 -->
     </classes>
-  </test> <!-- TestFiltroProductosPorMarca_Escenario1(failed) -->
+  </test> <!-- TestBusquedaProducto_Escenario1(failed) -->
 </suite> <!-- Failed suite [Suite] -->
