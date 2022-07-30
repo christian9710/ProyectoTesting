@@ -6,13 +6,13 @@ import org.testng.annotations.Test;
 
 import Objects.HomePage;
 import Objects.LoginPage;
-import Objects.BusquedaPage.BuscarProductosPage;
+import Objects.BusquedaPage.BusquedaProductoPage;
 import Objects.CarritoComprasPages.GuardarCarritoComprasPage;
 import Test_Scenarios.BaseTest;
 
 public class TestGuardarCarritoComoLista extends BaseTest {
 	
-	public BuscarProductosPage BPP;
+	public BusquedaProductoPage BPP;
 	public LoginPage LP;
 	public HomePage HP;
 	public GuardarCarritoComprasPage VCCP;
@@ -50,7 +50,7 @@ public class TestGuardarCarritoComoLista extends BaseTest {
 	   @BeforeMethod
 	    public void methodLevelSetUp()
 	    {
-	        BPP = new BuscarProductosPage(driver);
+	        BPP = new BusquedaProductoPage(driver);
 	        LP = new LoginPage(driver);
 	        VCCP = new GuardarCarritoComprasPage(driver);
 	        HP  = new HomePage(driver);
