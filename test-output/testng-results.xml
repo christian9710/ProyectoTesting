@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-29T18:05:41 CST" name="Suite" finished-at="2022-07-29T18:06:32 CST" duration-ms="51248">
+  <suite started-at="2022-07-29T23:03:46 CST" name="Suite" finished-at="2022-07-29T23:04:21 CST" duration-ms="34856">
     <groups>
     </groups>
-    <test started-at="2022-07-29T18:05:41 CST" name="TestFiltroProductosPorMarca_Escenario1" finished-at="2022-07-29T18:06:32 CST" duration-ms="51248">
-      <class name="Test_Scenarios.TestFiltrarProductosPorMarca_Escenario1">
-        <test-method is-config="true" signature="InitialSetUp(java.lang.String,java.lang.String)[pri:0, instance:Test_Scenarios.TestFiltrarProductosPorMarca_Escenario1@b9b00e0]" started-at="2022-07-29T18:05:41 CST" name="InitialSetUp" finished-at="2022-07-29T18:06:10 CST" duration-ms="29772" status="PASS">
+    <test started-at="2022-07-29T23:03:46 CST" name="TestBusquedaProducto_Escenario1" finished-at="2022-07-29T23:04:21 CST" duration-ms="34856">
+      <class name="Test_Scenarios.TestBuscarProducto_Escenario1">
+        <test-method is-config="true" signature="InitialSetUp(java.lang.String,java.lang.String)[pri:0, instance:Test_Scenarios.TestBuscarProducto_Escenario1@b9b00e0]" started-at="2022-07-29T23:03:46 CST" name="InitialSetUp" finished-at="2022-07-29T23:04:10 CST" duration-ms="24195" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,19 +23,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitialSetUp -->
-        <test-method is-config="true" signature="methodLevelSetUp()[pri:0, instance:Test_Scenarios.TestFiltrarProductosPorMarca_Escenario1@b9b00e0]" started-at="2022-07-29T18:06:10 CST" name="methodLevelSetUp" finished-at="2022-07-29T18:06:10 CST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="methodLevelSetUp()[pri:0, instance:Test_Scenarios.TestBuscarProducto_Escenario1@b9b00e0]" started-at="2022-07-29T23:04:10 CST" name="methodLevelSetUp" finished-at="2022-07-29T23:04:10 CST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodLevelSetUp -->
-        <test-method signature="testEscenario1()[pri:0, instance:Test_Scenarios.TestFiltrarProductosPorMarca_Escenario1@b9b00e0]" started-at="2022-07-29T18:06:10 CST" name="testEscenario1" finished-at="2022-07-29T18:06:32 CST" duration-ms="21297" status="PASS">
+        <test-method signature="testEscenario1(java.lang.String)[pri:0, instance:Test_Scenarios.TestBuscarProducto_Escenario1@b9b00e0]" started-at="2022-07-29T23:04:10 CST" name="testEscenario1" finished-at="2022-07-29T23:04:21 CST" duration-ms="10458" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chocolate]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEscenario1 -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Scenarios.TestFiltrarProductosPorMarca_Escenario1@b9b00e0]" started-at="2022-07-29T18:06:32 CST" name="teardown" finished-at="2022-07-29T18:06:32 CST" duration-ms="117" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Scenarios.TestBuscarProducto_Escenario1@b9b00e0]" started-at="2022-07-29T23:04:21 CST" name="teardown" finished-at="2022-07-29T23:04:21 CST" duration-ms="120" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- Test_Scenarios.TestFiltrarProductosPorMarca_Escenario1 -->
-    </test> <!-- TestFiltroProductosPorMarca_Escenario1 -->
+      </class> <!-- Test_Scenarios.TestBuscarProducto_Escenario1 -->
+    </test> <!-- TestBusquedaProducto_Escenario1 -->
   </suite> <!-- Suite -->
 </testng-results>

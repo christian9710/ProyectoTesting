@@ -11,11 +11,19 @@
     <parameter name="contrasena" value="ALGUNA-CONTRASENA"/>
 
   <!--  Tests -->
-    <!-- Escenario1 -  Creado: Monica Zuniga -  Código de prueba FUN-01 -->
+      <!-- Código de prueba FUN-01 Nombre: Búsqueda de producto existente-->
+    <test name="TestBusquedaProducto_Escenario1">
+        <parameter name="producto" value="chocolate"/>
+        <classes>
+            <class name="Test_Scenarios.TestBuscarProducto_Escenario1"/>
+        </classes>
+    </test>
+    
+      <!-- Código de prueba FUN-02 Nombre: Filtro de productos por marca -->
     <test name="TestFiltroProductosPorMarca_Escenario1">
         <classes>
             <class name="Test_Scenarios.TestFiltrarProductosPorMarca_Escenario1"/>
         </classes>
     </test>
-
+    
 </suite> <!-- Suite -->

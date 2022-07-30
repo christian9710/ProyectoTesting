@@ -15,7 +15,7 @@ public class TestFiltrarProductosPorMarca_Escenario1 extends BaseTest {
     public FiltroProductosPorMarcaPage FPPM;
 
     @Test
-    public void testEscenario1() throws InterruptedException {
+                                                                public void testEscenario1() throws InterruptedException {
         FPPM.clickOpcionAbarrotes();
         Thread.sleep(5000);
         FPPM.clickOpcionVerMarcas();
