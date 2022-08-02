@@ -10,42 +10,19 @@
     <parameter name="correo" value="correo@correo.com"/>
     <parameter name="contrasena" value="ALGUNA-CONTRASENA"/>
 
-  <!--  TESTS -->
-  
-    <!--  TESTS DE INTEGRACION-->
-     <!-- Código de prueba INT-02 Nombre: Agregar item al carrito de compras-->
-     <!-- Código de prueba INT-04 Nombre: Vaciar carrito de compras-->
-     <!-- Código de prueba INT-05 Nombre: Crear lista de compras -->
-     <!-- Código de prueba INT-06 Nombre: Agregar producto desde lista-->
-    
-    
-    <!--  TESTS FUNCIONALES-->
+  <!--  Tests -->
       <!-- Código de prueba FUN-01 Nombre: Búsqueda de producto existente-->
-    <test name="TestBusquedaProducto">
+    <test name="TestBusquedaProducto_Escenario1">
         <parameter name="producto" value="chocolate"/>
         <classes>
-            <class name="Test_Scenarios.TestBuscarProducto"/>
+            <class name="Test_Scenarios.TestBuscarProducto_Escenario1"/>
         </classes>
     </test>
     
       <!-- Código de prueba FUN-02 Nombre: Filtro de productos por marca -->
-    <test name="TestFiltroProductosPorMarca">
+    <test name="TestFiltroProductosPorMarca_Escenario1">
         <classes>
-            <class name="Test_Scenarios.TestFiltrarProductosPorMarca"/>
-        </classes>
-    </test>
-    
-     <!-- Código de prueba FUN-03 Nombre: Ordenar productos por precio de mayor a menor -->
-    <test name="TestOrdenarProductosMayorAMenor">
-        <classes>
-            <class name="Test_Scenarios.TestOrdenarProductosMayorAMenor"/>
-        </classes>
-    </test>
-    
-       <!-- Código de prueba FUN-04 Nombre: Ordenar productos por precio de menor a mayor -->
-    <test name="TestOrdenarProductosMenorAMayor">
-        <classes>
-            <class name="Test_Scenarios.TestOrdenarProductosMenorAMayor"/>
+            <class name="Test_Scenarios.TestFiltrarProductosPorMarca_Escenario1"/>
         </classes>
     </test>
     

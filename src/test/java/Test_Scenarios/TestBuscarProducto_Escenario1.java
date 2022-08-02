@@ -1,13 +1,12 @@
-package Test_Scenarios.Funcionales;
+package Test_Scenarios;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import Objects.BusquedaPage.BusquedaProductoPage;
-import Test_Scenarios.BaseTest;
+import Objects.BusquedaProductoPage;
 
-public class TestBuscarProducto extends BaseTest {
+public class TestBuscarProducto_Escenario1 extends BaseTest {
 	
 	 public BusquedaProductoPage BPP;
 
@@ -16,10 +15,8 @@ public class TestBuscarProducto extends BaseTest {
 	    public void testEscenario1(String producto) throws InterruptedException {
 	        BPP.clickInputBusqueda();
 	        Thread.sleep(5000);
-	        BPP.buscarProducto(producto);
+	        BPP.ingresarProducto(producto);
 	        Thread.sleep(5000);
-	        BPP.encontrarResultado();
-	        
 	    }
 
 	    @BeforeMethod

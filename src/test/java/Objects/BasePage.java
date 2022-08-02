@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BasePage {
-	protected WebDriver driver;
+	WebDriver driver;
 
     public BasePage(WebDriver driver)
     {
@@ -39,12 +39,6 @@ public class BasePage {
     public void pressEnterOnElement(By element)
     {
     	driver.findElement(element).sendKeys(Keys.ENTER);
-    }
-    
-    public void searchValue(By element, String text)
-    {
-    	driver.findElement(element).sendKeys(text, Keys.ENTER);
-    	
     }
 
 }

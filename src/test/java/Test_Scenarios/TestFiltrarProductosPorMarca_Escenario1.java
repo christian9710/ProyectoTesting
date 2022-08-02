@@ -1,17 +1,16 @@
-package Test_Scenarios.Funcionales;
+package Test_Scenarios;
 
 import org.testng.annotations.Test;
-
-import Objects.BusquedaPage.FiltroProductosPorMarcaPage;
 
 import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.BeforeMethod;
 
-import Test_Scenarios.BaseTest;
+
+import Objects.FiltroProductosPorMarcaPage;
 
 
-public class TestFiltrarProductosPorMarca extends BaseTest {
+public class TestFiltrarProductosPorMarca_Escenario1 extends BaseTest {
 
     public FiltroProductosPorMarcaPage FPPM;
 
