@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="correo" value="correo@correo.com"/>
-  <parameter name="contrasena" value="ALGUNA-CONTRASENA"/>
+  <parameter name="correo" value="olman.personal@gmail.com"/>
+  <parameter name="contrasena" value="Olm1910"/>
   <parameter name="Url" value="https://www.automercado.cr/"/>
   <parameter name="Browser" value="Chrome"/>
-  <test thread-count="5" name="TestFiltroProductosPorMarca(failed)">
+  <test thread-count="5" name="testInicioSesionIncorrecto(failed)">
     <classes>
-      <class name="Test_Scenarios.Funcionales.TestFiltrarProductosPorMarca">
+      <class name="Test_Scenarios.Humo.TestInicioSesionIncorrecto">
         <methods>
           <include name="InitialSetUp"/>
-          <include name="testEscenario1"/>
-          <include name="teardown"/>
           <include name="methodLevelSetUp"/>
+          <include name="teardown"/>
+          <include name="testEscenario1" invocation-numbers="0"/>
         </methods>
-      </class> <!-- Test_Scenarios.Funcionales.TestFiltrarProductosPorMarca -->
+      </class> <!-- Test_Scenarios.Humo.TestInicioSesionIncorrecto -->
     </classes>
-  </test> <!-- TestFiltroProductosPorMarca(failed) -->
+  </test> <!-- testInicioSesionIncorrecto(failed) -->
 </suite> <!-- Failed suite [Suite] -->

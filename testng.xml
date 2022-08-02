@@ -9,6 +9,10 @@
     <!--  Credentials a cambiar -->
     <parameter name="correo" value="correo@correo.com"/>
     <parameter name="contrasena" value="ALGUNA-CONTRASENA"/>
+    
+    <!--  Credentiales inicio sesion incorrecto -->
+    <parameter name="correoLoginHumo" value="olman.personal@gmail.com"/>
+    <parameter name="contrasenaLoginHumo" value="Olmi1910."/>
 
   <!--  TESTS -->
   
@@ -18,9 +22,9 @@
      <!-- Código de prueba INT-05 Nombre: Crear lista de compras -->
      <!-- Código de prueba INT-06 Nombre: Agregar producto desde lista-->
           <!-- Código de prueba FUN-02 Nombre: Filtro de productos por marca -->
-    <test name="TestFiltroProductosPorMarca">
+    <test name="testInicioSesionIncorrecto">
         <classes>
-            <class name="Test_Scenarios.Funcionales.TestFiltrarProductosPorMarca"/>
+            <class name="Test_Scenarios.Humo.TestInicioCredencialesIncorrectas"/>
         </classes>
     </test>
     
