@@ -1,5 +1,6 @@
 package Test_Scenarios;
 
+import org.apache.log4j.varia.NullAppender;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -22,7 +23,7 @@ public class BaseTest {
     @BeforeClass
     public void InitialSetUp(String browser, String url)
     {
-
+    	org.apache.log4j.BasicConfigurator.configure(new NullAppender());
     	System.setProperty("webdriver.chrome.driver", "/Users/monicazuniga/Downloads/chromedriver");
     	ChromeOptions options = new ChromeOptions(); 
     	options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});

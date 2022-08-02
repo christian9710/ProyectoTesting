@@ -17,36 +17,18 @@
      <!-- Código de prueba INT-04 Nombre: Vaciar carrito de compras-->
      <!-- Código de prueba INT-05 Nombre: Crear lista de compras -->
      <!-- Código de prueba INT-06 Nombre: Agregar producto desde lista-->
+          <!-- Código de prueba FUN-02 Nombre: Filtro de productos por marca -->
+    <test name="TestFiltroProductosPorMarca">
+        <classes>
+            <class name="Test_Scenarios.Funcionales.TestFiltrarProductosPorMarca"/>
+        </classes>
+    </test>
     
     
     <!--  TESTS FUNCIONALES-->
       <!-- Código de prueba FUN-01 Nombre: Búsqueda de producto existente-->
-    <test name="TestBusquedaProducto">
-        <parameter name="producto" value="chocolate"/>
-        <classes>
-            <class name="Test_Scenarios.TestBuscarProducto"/>
-        </classes>
-    </test>
+ 
     
       <!-- Código de prueba FUN-02 Nombre: Filtro de productos por marca -->
-    <test name="TestFiltroProductosPorMarca">
-        <classes>
-            <class name="Test_Scenarios.TestFiltrarProductosPorMarca"/>
-        </classes>
-    </test>
-    
-     <!-- Código de prueba FUN-03 Nombre: Ordenar productos por precio de mayor a menor -->
-    <test name="TestOrdenarProductosMayorAMenor">
-        <classes>
-            <class name="Test_Scenarios.TestOrdenarProductosMayorAMenor"/>
-        </classes>
-    </test>
-    
-       <!-- Código de prueba FUN-04 Nombre: Ordenar productos por precio de menor a mayor -->
-    <test name="TestOrdenarProductosMenorAMayor">
-        <classes>
-            <class name="Test_Scenarios.TestOrdenarProductosMenorAMayor"/>
-        </classes>
-    </test>
     
 </suite> <!-- Suite -->

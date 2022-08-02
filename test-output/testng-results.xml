@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-30T00:42:05 CST" name="Suite" finished-at="2022-07-30T00:43:11 CST" duration-ms="65897">
+  <suite started-at="2022-08-01T23:52:02 CST" name="Suite" finished-at="2022-08-01T23:52:49 CST" duration-ms="47125">
     <groups>
     </groups>
-    <test started-at="2022-07-30T00:42:05 CST" name="TestBusquedaProducto_Escenario1" finished-at="2022-07-30T00:43:11 CST" duration-ms="65897">
-      <class name="Test_Scenarios.TestBuscarProducto_Escenario1">
-        <test-method is-config="true" signature="InitialSetUp(java.lang.String,java.lang.String)[pri:0, instance:Test_Scenarios.TestBuscarProducto_Escenario1@b9b00e0]" started-at="2022-07-30T00:42:05 CST" name="InitialSetUp" finished-at="2022-07-30T00:42:30 CST" duration-ms="24847" status="PASS">
+    <test started-at="2022-08-01T23:52:02 CST" name="TestFiltroProductosPorMarca" finished-at="2022-08-01T23:52:49 CST" duration-ms="47125">
+      <class name="Test_Scenarios.Funcionales.TestFiltrarProductosPorMarca">
+        <test-method is-config="true" signature="InitialSetUp(java.lang.String,java.lang.String)[pri:0, instance:Test_Scenarios.Funcionales.TestFiltrarProductosPorMarca@7a5ceedd]" started-at="2022-08-01T23:52:02 CST" name="InitialSetUp" finished-at="2022-08-01T23:52:27 CST" duration-ms="24670" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,78 +23,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitialSetUp -->
-        <test-method is-config="true" signature="methodLevelSetUp()[pri:0, instance:Test_Scenarios.TestBuscarProducto_Escenario1@b9b00e0]" started-at="2022-07-30T00:42:30 CST" name="methodLevelSetUp" finished-at="2022-07-30T00:42:30 CST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="methodLevelSetUp()[pri:0, instance:Test_Scenarios.Funcionales.TestFiltrarProductosPorMarca@7a5ceedd]" started-at="2022-08-01T23:52:27 CST" name="methodLevelSetUp" finished-at="2022-08-01T23:52:27 CST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodLevelSetUp -->
-        <test-method signature="testEscenario1(java.lang.String)[pri:0, instance:Test_Scenarios.TestBuscarProducto_Escenario1@b9b00e0]" started-at="2022-07-30T00:42:30 CST" name="testEscenario1" finished-at="2022-07-30T00:43:10 CST" duration-ms="40828" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chocolate]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: /html/body/am-main/div[2]/am-product-search/div/div/div/div[2]/div/div[3]/div/div[1]/am-product-list/div/div/div/div/div/div[3]/a/span (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'Monicas-MacBook-Pro.local', ip: 'fe80:0:0:0:14be:8b55:7842:9c12%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '17.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/mb/_nx0yvwn58z...}, goog:chromeOptions: {debuggerAddress: localhost:52702}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:52702/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3c22be03515e08c468d72717d8296e13]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: /html/body/am-main/div[2]/am-product-search/div/div/div/div[2]/div/div[3]/div/div[1]/am-product-list/div/div/div/div/div/div[3]/a/span (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'Monicas-MacBook-Pro.local', ip: 'fe80:0:0:0:14be:8b55:7842:9c12%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '17.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/mb/_nx0yvwn58z...}, goog:chromeOptions: {debuggerAddress: localhost:52702}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:52702/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3c22be03515e08c468d72717d8296e13
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-at Objects.BasePage.isDisplayed(BasePage.java:35)
-at Objects.BusquedaProductoPage.encontrarResultado(BusquedaProductoPage.java:22)
-at Test_Scenarios.TestBuscarProducto_Escenario1.testEscenario1(TestBuscarProducto_Escenario1.java:20)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="testEscenario1()[pri:0, instance:Test_Scenarios.Funcionales.TestFiltrarProductosPorMarca@7a5ceedd]" started-at="2022-08-01T23:52:27 CST" name="testEscenario1" finished-at="2022-08-01T23:52:49 CST" duration-ms="22279" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEscenario1 -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Scenarios.TestBuscarProducto_Escenario1@b9b00e0]" started-at="2022-07-30T00:43:10 CST" name="teardown" finished-at="2022-07-30T00:43:11 CST" duration-ms="120" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Scenarios.Funcionales.TestFiltrarProductosPorMarca@7a5ceedd]" started-at="2022-08-01T23:52:49 CST" name="teardown" finished-at="2022-08-01T23:52:49 CST" duration-ms="111" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- Test_Scenarios.TestBuscarProducto_Escenario1 -->
-    </test> <!-- TestBusquedaProducto_Escenario1 -->
+      </class> <!-- Test_Scenarios.Funcionales.TestFiltrarProductosPorMarca -->
+    </test> <!-- TestFiltroProductosPorMarca -->
   </suite> <!-- Suite -->
 </testng-results>

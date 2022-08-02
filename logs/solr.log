@@ -1,0 +1,18 @@
+INFO  - 2022-08-01 23:49:06.509; org.testng.log4testng.Logger; [TestNG] Running:
+  /Users/monicazuniga/Documents/ProyectoTesting/testng.xml
+
+ERROR - 2022-08-01 23:49:06.605; org.testng.log4testng.Logger; /Users/monicazuniga/Documents/ProyectoTesting/test-output/jquery-3.6.0.min.js
+java.nio.file.FileAlreadyExistsException: /Users/monicazuniga/Documents/ProyectoTesting/test-output/jquery-3.6.0.min.js
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:94)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:218)
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:484)
+	at java.base/java.nio.file.Files.newOutputStream(Files.java:228)
+	at java.base/java.nio.file.Files.copy(Files.java:3160)
+	at org.testng.reporters.jq.Main.generateReport(Main.java:95)
+	at org.testng.TestNG.generateReports(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1072)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
