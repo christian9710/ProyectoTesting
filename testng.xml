@@ -13,6 +13,10 @@
     <!--  Credentiales inicio sesion incorrecto -->
     <parameter name="correoLoginHumo" value="olman.personal@gmail.com"/>
     <parameter name="contrasenaLoginHumo" value="Olmi1910."/>
+    
+    <!--  Credentiales inicio sesion correcto -->
+    <parameter name="correoCorrectoHumo" value="olman.personal@gmail.com"/>
+    <parameter name="contrasenaCorrectaHumo" value="Olm1910."/>
 
   <!--  TESTS -->
   
@@ -24,7 +28,7 @@
           <!-- Código de prueba FUN-02 Nombre: Filtro de productos por marca -->
     <test name="testInicioSesionIncorrecto">
         <classes>
-            <class name="Test_Scenarios.Humo.TestInicioCredencialesIncorrectas"/>
+            <class name="Test_Scenarios.Humo.TestValidacionesInicioSesion"/>
         </classes>
     </test>
     

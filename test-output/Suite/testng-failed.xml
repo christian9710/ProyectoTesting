@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="correo" value="olman.personal@gmail.com"/>
-  <parameter name="contrasena" value="Olm1910"/>
+  <parameter name="contrasenaLoginHumo" value="Olmi1910."/>
+  <parameter name="correo" value="correo@correo.com"/>
+  <parameter name="correoCorrectoHumo" value="olman.personal@gmail.com"/>
+  <parameter name="contrasena" value="ALGUNA-CONTRASENA"/>
+  <parameter name="contrasenaCorrectaHumo" value="Olm1910."/>
+  <parameter name="correoLoginHumo" value="olman.personal@gmail.com"/>
   <parameter name="Url" value="https://www.automercado.cr/"/>
   <parameter name="Browser" value="Chrome"/>
   <test thread-count="5" name="testInicioSesionIncorrecto(failed)">
     <classes>
-      <class name="Test_Scenarios.Humo.TestInicioSesionIncorrecto">
+      <class name="Test_Scenarios.Humo.TestValidacionesInicioSesion">
         <methods>
+          <include name="testEscenario1"/>
           <include name="InitialSetUp"/>
-          <include name="methodLevelSetUp"/>
           <include name="teardown"/>
-          <include name="testEscenario1" invocation-numbers="0"/>
+          <include name="methodLevelSetUp"/>
         </methods>
-      </class> <!-- Test_Scenarios.Humo.TestInicioSesionIncorrecto -->
+      </class> <!-- Test_Scenarios.Humo.TestValidacionesInicioSesion -->
     </classes>
   </test> <!-- testInicioSesionIncorrecto(failed) -->
 </suite> <!-- Failed suite [Suite] -->
