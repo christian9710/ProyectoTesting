@@ -36,8 +36,8 @@
 	
 		<!-- Código de prueba INT-02' Nombre: Agregar productob a carrito de compras-->
 	    <test name="TestAgregarProductoAlCarrito">
-	       <parameter name="correo" value="mozunigaa@gmail.com"/>
-           <parameter name="contrasena" value="6411141m93"/>
+	       <parameter name="correo" value="CORREO"/>
+           <parameter name="contrasena" value="CONTRASENA"/>
 	        <classes>
 	            <class name="Test_Scenarios.Integracion.TestAgregarProductoAlCarrito"/>
 	        </classes>
@@ -46,8 +46,8 @@
 
    		<!-- Código de prueba INT-04' Nombre: Vaciar carrito de compras-->
 	    <test name="TestVaciarCarritoCompras">
-	       <parameter name="correo" value="mozunigaa@gmail.com"/>
-           <parameter name="contrasena" value="6411141m93"/>
+	       <parameter name="correo" value="CORREO"/>
+           <parameter name="contrasena" value="CONTRASENA"/>
 	        <classes>
 	            <class name="Test_Scenarios.Integracion.TestVaciarCarritoCompras"/>
 	        </classes>
@@ -55,8 +55,8 @@
 	    
         <!-- Código de prueba INT-05' Nombre: Crear lista de compras desde carrito-->
 	    <test name="TestGuardarCarritoComoLista">
-	       <parameter name="correo" value="mozunigaa@gmail.com"/>
-           <parameter name="contrasena" value="6411141m93"/>
+	       <parameter name="correo" value="CORREO"/>
+           <parameter name="contrasena" value="CONTRASENA"/>
            <parameter name="nombreLista" value="Lista"/>
 	        <classes>
 	            <class name="Test_Scenarios.Integracion.TestGuardarCarritoComoLista"/>
