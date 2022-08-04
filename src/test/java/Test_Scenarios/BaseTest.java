@@ -24,7 +24,7 @@ public class BaseTest {
     public void InitialSetUp(String browser, String url)
     {
     	org.apache.log4j.BasicConfigurator.configure(new NullAppender());
-    	System.setProperty("webdriver.chrome.driver", "/Users/monicazuniga/Downloads/chromedriver");
+    	System.setProperty("webdriver.chrome.driver","C:\\Users\\XPC\\eclipse-workspace\\ProyectoAutomercado/chromedriver.exe");
     	ChromeOptions options = new ChromeOptions(); 
     	options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
         driver = new ChromeDriver(options);
