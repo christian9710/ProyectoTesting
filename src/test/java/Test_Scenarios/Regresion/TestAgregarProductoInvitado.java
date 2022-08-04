@@ -1,33 +1,34 @@
-package Test_Scenarios.Humo;
-
-import static org.testng.Assert.assertTrue;
+package Test_Scenarios.Regresion;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import Objects.FiltrosProductos.SeleccionProductos;
 import Objects.InicioSesion.InicioSesion;
 import Test_Scenarios.BaseTest;
 
-public class TestInicioSesionCorrecto extends BaseTest {
-	 public InicioSesion ISI;
+public class TestAgregarProductoInvitado extends BaseTest {
+	 public SeleccionProductos SP;
 
 	    @Parameters({"correoCorrectoHumo","contrasenaCorrectaHumo"})
 	    @Test
 	    public void testEscenario1(String correo, String contrasena) throws InterruptedException {
-	    	ISI.clickBotonInicio();
+	    	SP.clickBtnCategoria();
 	    	Thread.sleep(5000);
-	    	ISI.llenarInputCorreo(correo);
-	    	Thread.sleep(2000);
-	    	ISI.llenarInputContrasena(contrasena);
-	    	Thread.sleep(2000);
-	    	ISI.clickBotonIniciarSesion();
+	    	SP.clickBtnProducto();
 	    	Thread.sleep(5000);
+	    	SP.llenarInputCorreo(correo);
+	    	Thread.sleep(2000);
+	    	SP.llenarInputContrasena(contrasena);
+	    	Thread.sleep(2000);
+	    	SP.clickBtnInicioSesion();
+	    	Thread.sleep(2000);
 	    }
 
 	    @BeforeMethod
 	    public void methodLevelSetUp()
 	    {
-	    	ISI = new InicioSesion(driver);
+	    	SP = new SeleccionProductos(driver);
 	    }
 }

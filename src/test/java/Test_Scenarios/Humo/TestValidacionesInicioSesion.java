@@ -6,11 +6,11 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import Objects.InicioSesion.InicioSesionInCorrecto;
+import Objects.InicioSesion.InicioSesion;
 import Test_Scenarios.BaseTest;
 
 public class TestValidacionesInicioSesion extends BaseTest {
-	 public InicioSesionInCorrecto ISI;
+	 public InicioSesion ISI;
 
 	    @Test
 	    public void testEscenario1() throws InterruptedException {
@@ -35,6 +35,6 @@ public class TestValidacionesInicioSesion extends BaseTest {
 	    @BeforeMethod
 	    public void methodLevelSetUp()
 	    {
-	    	ISI = new InicioSesionInCorrecto(driver);
+	    	ISI = new InicioSesion(driver);
 	    }
 }
