@@ -6,60 +6,53 @@ import org.openqa.selenium.WebDriver;
 import Objects.BasePage;
 
 public class AgregarProductosCarritoPage extends BasePage{
-
-    By InputBusqueda = By.xpath("//div[@class='col-md-3 select-delivery']/following-sibling::div/div/div/form/input[@class='ais-SearchBox-input']");
-    By btnBusqueda = By.xpath("//div[@class='col-md-3 select-delivery']/following-sibling::div/div/div/form/button[@class='ais-SearchBox-submit']");
-    By ModalAudioTutorial = By.xpath("//img[@ng-click='onCloseAudioTutorialModal()']");
-    By btnAgregar = By.xpath("//button[@data-objectid='354040d2-03ec-e911-a986-000d3a30d0ca']");
-    By btnAgregarProductolimon =  By.xpath("//span[@id='button-106626']");
-    By btnAgregarProductoPano =  By.xpath("//span[@id='button-046553']");
-    By btnAgregarProductoCarne =  By.xpath("//button[@data-objectid='017681fe-30fd-e811-a970-000d3a3026d6']");
-    By btnAgregarMas =  By.xpath("//button[@class='btn cart-summary-btn']");
-    By btnAgregarProductoMoet =  By.xpath("//button[@data-objectid='ca28856b-33fd-e811-a973-000d3a3099e5']");
-
-
+	
+	By bebidasLicoresButton = By.xpath("/html/body/am-main/div[2]/am-home/am-explore-products/div/section/div/div/div[2]/div/div/drag-scroll/div/div[3]/am-product-category/div/div[1]/img");
+	By btnAgregar = By.xpath("//*[@id=\"add-to-cart-181014\"]");
+	By btnPickUp = By.xpath("/html/body/ngb-modal-window/div/div/am-modal-select-method/div/div[2]/div[2]/div/div[3]/am-method-card/div/div[2]/div[2]/am-button/button");
+	By btnRegular = By.xpath("/html/body/ngb-modal-window/div/div/am-modal-pickup/div/div[2]/div[1]/div[1]/label/span");
+	By btnGuardar = By.xpath("/html/body/ngb-modal-window/div/div/am-modal-pickup/div/div[2]/div[3]/am-button/button");
+	By btnCarrito = By.xpath("/html/body/am-main/div[1]/am-navbar/nav/div[1]/div/ul/div[3]/li[2]/am-shopping-cart/div/img");
+	By productoItem = By.xpath("/html/body/am-main/div[1]/am-navbar/nav/div[1]/div/ul/div[3]/li[2]/am-shopping-cart/form/div/div[3]/div/div/div[2]/div[2]/h2[1]");
+   
     public AgregarProductosCarritoPage(WebDriver driver){
 
       super(driver);
 
     }
 
-    public void buscarProducto(String producto) {
-
-        sendKeys(InputBusqueda, producto);
-        click(btnBusqueda);
-        click(ModalAudioTutorial);
-        click(btnAgregar);
+    
+    public void clickBtnBebidasLicores() {
+        click(bebidasLicoresButton);
 
     }
 
-    public void btnAgregarProductolimon() {
-
-        click(btnAgregarProductolimon);
-
-    }
-
-	public void btnAgregarProductoPano() {
-	
-	    click(btnAgregarProductoPano);
+	public void clickBtnAgregarProducto() {
+	    click(btnAgregar);
 	
 	}
-	public void btnAgregarProductoCarne() {
-	
-	    click(btnAgregarProductoCarne);
+	public void clickBtnTipoEntregaPickUp() {
+	    click(btnPickUp);
 	
 	}
 	
-	public void btnAgregarMas() {
-	
-	    click(btnAgregarMas);
+	public void clickBtnRegular() {
+	    click(btnRegular);
 	
 	}
 	
+
+	public void clickBtnGuardar() {
+	  click(btnGuardar);
 	
-	public void btnAgregarProductoMoet() {
+	}
 	
-	  click(btnAgregarProductoMoet);
-	
+	public void clickBtnCarrito() {
+		  click(btnCarrito);
+		
+	}
+	public boolean buscarProducto() {
+		return isDisplayed(productoItem);
+		
 	}
 }

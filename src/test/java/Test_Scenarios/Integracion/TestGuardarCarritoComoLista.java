@@ -1,5 +1,7 @@
 package Test_Scenarios.Integracion;
 
+import static org.testng.Assert.assertTrue;
+
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -13,45 +15,52 @@ import Test_Scenarios.BaseTest;
 public class TestGuardarCarritoComoLista extends BaseTest {
 	
 	public BusquedaProductoPage BPP;
-	public LoginPage LP;
+	public LoginPage ALP; 
 	public HomePage HP;
 	public GuardarCarritoComprasPage VCCP;
 	
-	 @Parameters({"correo","contrasena","producto","nombreLista"})
+	 @Parameters({"correo","contrasena","nombreLista"})
 	    @Test
-	    public void GuardarCarritoComoLista(String correo,String contrasena,String producto, String nombreLista) {
-	        try {
-	            Thread.sleep(5000);
-	            this.loginProcess(correo, contrasena);
-	            Thread.sleep(5000);
-	            this.VCCP.sendKeys(BPP.inputBusqueda, producto);
-	            this.VCCP.closeTutorial();
-	            this.VCCP.vaciarCarritoCompras();
-	            Thread.sleep(5000);
-	            this.VCCP.click(this.VCCP.btnAgregarProducto);
-	            Thread.sleep(5000);
-	            this.VCCP.click(this.VCCP.btnPickUpEntrega);
-	            this.VCCP.click(this.VCCP.rbSitioGuacima);
-	            this.VCCP.click(this.VCCP.btnConfirmarRecogerPedido);
-	            this.VCCP.click(this.VCCP.btnCarritoCompras);
-	            this.VCCP.click(this.VCCP.btnGuardarComoLista);
-	            this.VCCP.sendKeys(this.VCCP.txtNombreLista, nombreLista);
-	            this.VCCP.click(this.VCCP.btnCrearLista);
-	            this.VCCP.click(this.VCCP.btnOkCrearLista);
-	            Thread.sleep(5000);
-	            this.driver.get("https://www.automercado.cr/profile/lists");
-	            Thread.sleep(5000);
-	        } catch (Exception error) {
-	            System.out.println("Error en GuardarCarritoComoLista");
-	            System.out.println(error);
-	        }
+	    public void GuardarCarritoComoLista(String correo,String contrasena, String nombreLista) throws InterruptedException {
+			ALP.clickIniciarSesion();
+	        Thread.sleep(5000);
+
+		 	ALP.login(correo,contrasena);
+	        Thread.sleep(5000);
+
+	        ALP.clickLoginButton();
+	        Thread.sleep(5000);
+	        
+	        HP.CerrarReproductorModal();
+	        Thread.sleep(10000);
+	        
+	        VCCP.clickBtnCarrito();
+	        Thread.sleep(5000);
+	        
+	        VCCP.clickGuardarCarritoComoLista();
+	        Thread.sleep(5000);
+	        
+	        VCCP.clickNuevaLista();
+	        Thread.sleep(5000);
+	        
+	        VCCP.ingresaNombreLista(nombreLista);
+	        Thread.sleep(5000);
+	        
+	        VCCP.clickPaseos();
+	        Thread.sleep(5000);
+	        
+	        VCCP.clickGuardarLista();
+	        Thread.sleep(5000);
+	        
+	        assertTrue(VCCP.modalEsMostrado(),"No se encuentra");
+	        Thread.sleep(2000);
 	    }
 	 
 	   @BeforeMethod
 	    public void methodLevelSetUp()
 	    {
 	        BPP = new BusquedaProductoPage(driver);
-	        LP = new LoginPage(driver);
+	        ALP = new LoginPage(driver);
 	        VCCP = new GuardarCarritoComprasPage(driver);
 	        HP  = new HomePage(driver);
 	    }

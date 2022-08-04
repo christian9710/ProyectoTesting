@@ -8,9 +8,10 @@ public class LoginPage extends BasePage{
 
     private WebDriver driver;
 
-    By InputEmail = By.xpath("//input[@type='email'][@ng-model='email']");
-    By InputPass = By.xpath("//input[@type='password'][@ng-model='password']");
-    public By LoginButton = By.xpath("//button[@ng-click='login()']");
+    public By iniciarSesion = By.xpath("/html/body/am-main/div[1]/am-navbar/nav/div[1]/div/ul/div[3]/li[2]/am-button/button");
+    By InputEmail = By.xpath("//*[@id=\"email\"]");
+    By InputPass = By.xpath("//*[@id=\"password\"]");
+    public By LoginButton = By.xpath("/html/body/ngb-modal-window/div/div/am-login-modal/div/div/div/div[2]/div[2]/div/form/div[4]/am-button/button");
 
     public LoginPage(WebDriver driver){
 
@@ -32,8 +33,11 @@ public class LoginPage extends BasePage{
     public void loginProcess(String correo, String contrasena) throws InterruptedException {
         this.sendKeys(InputEmail,correo);
         this.sendKeys(InputPass,contrasena);
-        this.click(LoginButton);
     }
 
+    public void clickIniciarSesion()
+    {
+        click(iniciarSesion);
+    }
 }
 

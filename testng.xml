@@ -5,30 +5,62 @@
   <!--  Browser & url -->
   	<parameter name="Browser" value="Chrome"/>
     <parameter name="Url" value="https://www.automercado.cr/"/>
-  <!--  Credenciales -->
-    <!--  Credentials a cambiar -->
-    <parameter name="correo" value="correo@correo.com"/>
-    <parameter name="contrasena" value="ALGUNA-CONTRASENA"/>
 
   <!--  TESTS -->
-  
-    <!--  TESTS DE INTEGRACION-->
-     <!-- Código de prueba INT-02 Nombre: Agregar item al carrito de compras-->
-     <!-- Código de prueba INT-04 Nombre: Vaciar carrito de compras-->
-     <!-- Código de prueba INT-05 Nombre: Crear lista de compras -->
-     <!-- Código de prueba INT-06 Nombre: Agregar producto desde lista-->
-          <!-- Código de prueba FUN-02 Nombre: Filtro de productos por marca -->
-    <test name="TestFiltroProductosPorMarca">
-        <classes>
-            <class name="Test_Scenarios.Funcionales.TestFiltrarProductosPorMarca"/>
-        </classes>
-    </test>
-    
-    
+
     <!--  TESTS FUNCIONALES-->
-      <!-- Código de prueba FUN-01 Nombre: Búsqueda de producto existente-->
- 
     
-      <!-- Código de prueba FUN-02 Nombre: Filtro de productos por marca -->
+          <!-- Código de prueba FUN-01 Nombre: Búsqueda de producto existente-->
+	    <test name="TestBusquedaProducto_Escenario1">
+	        <parameter name="producto" value="chocolate"/>
+	        <classes>
+	            <class name="Test_Scenarios.Funcionales.TestBuscarProducto"/>
+	        </classes>
+	    </test>
+    
+        <!-- Código de prueba FUN-02 Nombre: Filtro de productos por marca -->
+	    <test name="TestFiltroProductosPorMarca">
+	        <classes>
+	            <class name="Test_Scenarios.Funcionales.TestFiltrarProductosPorMarca"/>
+	        </classes>
+	    </test>
+	    
+	    <!-- Código de prueba FUN-01 Nombre: Búsqueda de producto existente-->
+	    <test name="TestOrdenarProductosMayorAMenor">
+	        <classes>
+	            <class name="Test_Scenarios.Funcionales.TestOrdenarProductosMayorAMenor"/>
+	        </classes>
+	    </test>
+	    
+	<!--  TESTS DE INTEGRACION-->
+	
+		<!-- Código de prueba INT-02' Nombre: Agregar productob a carrito de compras-->
+	    <test name="TestAgregarProductoAlCarrito">
+	       <parameter name="correo" value="mozunigaa@gmail.com"/>
+           <parameter name="contrasena" value="6411141m93"/>
+	        <classes>
+	            <class name="Test_Scenarios.Integracion.TestAgregarProductoAlCarrito"/>
+	        </classes>
+	    </test>
+		
+
+   		<!-- Código de prueba INT-04' Nombre: Vaciar carrito de compras-->
+	    <test name="TestVaciarCarritoCompras">
+	       <parameter name="correo" value="mozunigaa@gmail.com"/>
+           <parameter name="contrasena" value="6411141m93"/>
+	        <classes>
+	            <class name="Test_Scenarios.Integracion.TestVaciarCarritoCompras"/>
+	        </classes>
+	    </test>
+	    
+        <!-- Código de prueba INT-05' Nombre: Crear lista de compras desde carrito-->
+	    <test name="TestGuardarCarritoComoLista">
+	       <parameter name="correo" value="mozunigaa@gmail.com"/>
+           <parameter name="contrasena" value="6411141m93"/>
+           <parameter name="nombreLista" value="Lista"/>
+	        <classes>
+	            <class name="Test_Scenarios.Integracion.TestGuardarCarritoComoLista"/>
+	        </classes>
+	    </test>
     
 </suite> <!-- Suite -->

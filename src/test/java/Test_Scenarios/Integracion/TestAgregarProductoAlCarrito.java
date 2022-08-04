@@ -1,5 +1,7 @@
 package Test_Scenarios.Integracion;
 
+import static org.testng.Assert.assertTrue;
+
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -14,42 +16,45 @@ public class TestAgregarProductoAlCarrito extends BaseTest {
 	public LoginPage ALP;
 	public HomePage HP;
 	
-	 @Parameters({"producto","correo","contrasena"})
+	 @Parameters({"correo","contrasena"})
 	    @Test
-	    public void FirstTest(String producto ,String correo,String contrasena) throws InterruptedException {
+	    public void FirstTest(String correo,String contrasena) throws InterruptedException {
 
-
-	        HP.inputSearch(producto);
+	     
+		 	ALP.clickIniciarSesion();
 	        Thread.sleep(5000);
 
-	        HP.CerrarReproductorModal();
-	        Thread.sleep(5000);
-
-	        APCC.btnAgregarProductoCarne();
-	        Thread.sleep(5000);
-
-	        ALP.login(correo,contrasena);
+		 	ALP.login(correo,contrasena);
 	        Thread.sleep(5000);
 
 	        ALP.clickLoginButton();
 	        Thread.sleep(5000);
+	        
+	        HP.CerrarReproductorModal();
+	        Thread.sleep(10000);
 
-	        HP.clickMetodoEntregaButton();
+	        APCC.clickBtnBebidasLicores();
+	        Thread.sleep(10000);
+
+	        APCC.clickBtnAgregarProducto();
+	        Thread.sleep(10000);
+
+	        APCC.clickBtnTipoEntregaPickUp();
 	        Thread.sleep(5000);
 
-	        HP.clickPickUpButton();
+	        APCC.clickBtnRegular();
 	        Thread.sleep(5000);
 
-	        HP.ElegirSucursalButton();
+	        APCC.clickBtnGuardar();
+	        Thread.sleep(10000);
+	        
+	        APCC.clickBtnAgregarProducto();
+	        Thread.sleep(10000);
+	        
+	        APCC.clickBtnCarrito();
 	        Thread.sleep(5000);
-
-	        HP.ConfirmSucursalButton();
-	        Thread.sleep(5000);
-
-	        APCC.btnAgregarProductoCarne();
-	        Thread.sleep(5000);
-
-	        APCC.btnAgregarMas();
+	        
+	        assertTrue(APCC.buscarProducto(),"No se encuentra");
 	        Thread.sleep(5000);
 
 
