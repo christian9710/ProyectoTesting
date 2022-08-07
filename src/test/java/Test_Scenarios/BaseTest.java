@@ -24,9 +24,8 @@ public class BaseTest {
     public void InitialSetUp(String browser, String url)
     {
     	org.apache.log4j.BasicConfigurator.configure(new NullAppender());
-    	System.setProperty("webdriver.chrome.driver","C:\\Users\\XPC\\eclipse-workspace\\ProyectoAutomercado/chromedriver.exe");
+    	System.setProperty("webdriver.chrome.driver", "/Users/Yozzco/Documents/chromedriver.exe");
     	ChromeOptions options = new ChromeOptions(); 
-    	options.addArguments("start-maximized");
     	options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();

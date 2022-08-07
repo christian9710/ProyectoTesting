@@ -6,7 +6,29 @@
   	<parameter name="Browser" value="Chrome"/>
     <parameter name="Url" value="https://www.automercado.cr/"/>
 
+
   <!--  TESTS -->
+	<!--  Credenciales -->
+    <!--  Credentials a cambiar -->
+    <parameter name="correo" value="correo@correo.com"/>
+    <parameter name="contrasena" value="ALGUNA-CONTRASENA"/>
+    
+    <!--  Credentiales inicio sesion incorrecto -->
+    <parameter name="correoLoginHumo" value="olman.personal@gmail.com"/>
+    <parameter name="contrasenaLoginHumo" value="Olmi1910."/>
+    
+    <!--  Credentiales inicio sesion correcto -->
+    <parameter name="correoCorrectoHumo" value="olman.personal@gmail.com"/>
+    <parameter name="contrasenaCorrectaHumo" value="Olm1910."/>
+
+	<!--  TESTS HUMO-->
+    <test name="testInicioSesionIncorrecto">
+        <classes>
+            <class name="Test_Scenarios.Humo.TestValidacionesInicioSesion"/>
+        </classes>
+    </test>
+    
+    
 
     <!--  TESTS FUNCIONALES-->
     
@@ -63,7 +85,7 @@
 	        </classes>
 	    </test>
     
-    	<!--  TESTS DE Unitarios-->
+    	<!--  TESTS DE UNITARIOS-->
 	
 		<!-- Código de prueba UT-01' Nombre: Iniciar Session-->
 	    <test name="TestAbrirSeccionInicioSesion">
