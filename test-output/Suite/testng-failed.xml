@@ -1,21 +1,142 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="contrasenaLoginHumo" value="Olmi1910."/>
+  <parameter name="correo" value="correo@correo.com"/>
+  <parameter name="correoCorrectoHumo" value="olman.personal@gmail.com"/>
+  <parameter name="contrasena" value="ALGUNA-CONTRASENA"/>
+  <parameter name="contrasenaCorrectaHumo" value="Olm1910."/>
+  <parameter name="correoLoginHumo" value="olman.personal@gmail.com"/>
   <parameter name="Url" value="https://www.automercado.cr/"/>
   <parameter name="Browser" value="Chrome"/>
+  <test thread-count="5" name="testInicioSesionIncorrecto(failed)">
+    <classes>
+      <class name="Test_Scenarios.Humo.TestValidacionesInicioSesion">
+        <methods>
+          <include name="testEscenario1"/>
+          <include name="InitialSetUp"/>
+          <include name="teardown"/>
+          <include name="methodLevelSetUp"/>
+        </methods>
+      </class> <!-- Test_Scenarios.Humo.TestValidacionesInicioSesion -->
+    </classes>
+  </test> <!-- testInicioSesionIncorrecto(failed) -->
+  <test thread-count="5" name="TestBusquedaProducto_Escenario1(failed)">
+    <parameter name="producto" value="chocolate"/>
+    <classes>
+      <class name="Test_Scenarios.Funcionales.TestBuscarProducto">
+        <methods>
+          <include name="InitialSetUp"/>
+          <include name="testEscenario1"/>
+          <include name="teardown"/>
+          <include name="methodLevelSetUp"/>
+        </methods>
+      </class> <!-- Test_Scenarios.Funcionales.TestBuscarProducto -->
+    </classes>
+  </test> <!-- TestBusquedaProducto_Escenario1(failed) -->
+  <test thread-count="5" name="TestFiltroProductosPorMarca(failed)">
+    <classes>
+      <class name="Test_Scenarios.Funcionales.TestFiltrarProductosPorMarca">
+        <methods>
+          <include name="InitialSetUp"/>
+          <include name="testEscenario1"/>
+          <include name="teardown"/>
+          <include name="methodLevelSetUp"/>
+        </methods>
+      </class> <!-- Test_Scenarios.Funcionales.TestFiltrarProductosPorMarca -->
+    </classes>
+  </test> <!-- TestFiltroProductosPorMarca(failed) -->
+  <test thread-count="5" name="TestOrdenarProductosMayorAMenor(failed)">
+    <classes>
+      <class name="Test_Scenarios.Funcionales.TestOrdenarProductosMayorAMenor">
+        <methods>
+          <include name="InitialSetUp"/>
+          <include name="methodLevelSetUp"/>
+          <include name="teardown"/>
+          <include name="testEscenario1"/>
+        </methods>
+      </class> <!-- Test_Scenarios.Funcionales.TestOrdenarProductosMayorAMenor -->
+    </classes>
+  </test> <!-- TestOrdenarProductosMayorAMenor(failed) -->
+  <test thread-count="5" name="TestAgregarProductoAlCarrito(failed)">
+    <parameter name="correo" value="CORREO"/>
+    <parameter name="contrasena" value="CONTRASENA"/>
+    <classes>
+      <class name="Test_Scenarios.Integracion.TestAgregarProductoAlCarrito">
+        <methods>
+          <include name="InitialSetUp"/>
+          <include name="methodLevelSetUp"/>
+          <include name="teardown"/>
+          <include name="FirstTest"/>
+        </methods>
+      </class> <!-- Test_Scenarios.Integracion.TestAgregarProductoAlCarrito -->
+    </classes>
+  </test> <!-- TestAgregarProductoAlCarrito(failed) -->
+  <test thread-count="5" name="TestVaciarCarritoCompras(failed)">
+    <parameter name="correo" value="CORREO"/>
+    <parameter name="contrasena" value="CONTRASENA"/>
+    <classes>
+      <class name="Test_Scenarios.Integracion.TestVaciarCarritoCompras">
+        <methods>
+          <include name="VaciarCarritoDeCompras"/>
+          <include name="InitialSetUp"/>
+          <include name="teardown"/>
+          <include name="methodLevelSetUp"/>
+        </methods>
+      </class> <!-- Test_Scenarios.Integracion.TestVaciarCarritoCompras -->
+    </classes>
+  </test> <!-- TestVaciarCarritoCompras(failed) -->
   <test thread-count="5" name="TestGuardarCarritoComoLista(failed)">
-    <parameter name="correo" value="mozunigaa@gmail.com"/>
+    <parameter name="correo" value="CORREO"/>
     <parameter name="nombreLista" value="Lista"/>
-    <parameter name="contrasena" value="6411141m93"/>
+    <parameter name="contrasena" value="CONTRASENA"/>
     <classes>
       <class name="Test_Scenarios.Integracion.TestGuardarCarritoComoLista">
         <methods>
           <include name="InitialSetUp"/>
           <include name="methodLevelSetUp"/>
           <include name="teardown"/>
-          <include name="GuardarCarritoComoLista" invocation-numbers="0"/>
+          <include name="GuardarCarritoComoLista"/>
         </methods>
       </class> <!-- Test_Scenarios.Integracion.TestGuardarCarritoComoLista -->
     </classes>
   </test> <!-- TestGuardarCarritoComoLista(failed) -->
+  <test thread-count="5" name="TestAbrirSeccionInicioSesion(failed)">
+    <classes>
+      <class name="Test_Scenarios.Unitarios.TestAbrirSeccionInicioSesion">
+        <methods>
+          <include name="InitialSetUp"/>
+          <include name="SetUp"/>
+          <include name="TestRecetas"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Test_Scenarios.Unitarios.TestAbrirSeccionInicioSesion -->
+    </classes>
+  </test> <!-- TestAbrirSeccionInicioSesion(failed) -->
+  <test thread-count="5" name="TestAbrirSeccionRecetas(failed)">
+    <classes>
+      <class name="Test_Scenarios.Unitarios.TestAbrirSeccionRecetas">
+        <methods>
+          <include name="InitialSetUp"/>
+          <include name="SetUp"/>
+          <include name="teardown"/>
+          <include name="TestRecetas"/>
+        </methods>
+      </class> <!-- Test_Scenarios.Unitarios.TestAbrirSeccionRecetas -->
+    </classes>
+  </test> <!-- TestAbrirSeccionRecetas(failed) -->
+  <test thread-count="5" name="TestConfirmarInicioSesion(failed)">
+    <parameter name="correo" value="CORREO"/>
+    <parameter name="contrasena" value="CONTRASENA"/>
+    <classes>
+      <class name="Test_Scenarios.Unitarios.TestConfirmarInicioSesion">
+        <methods>
+          <include name="InitialSetUp"/>
+          <include name="ConfirmationTest"/>
+          <include name="teardown"/>
+          <include name="methodLevelSetUp"/>
+        </methods>
+      </class> <!-- Test_Scenarios.Unitarios.TestConfirmarInicioSesion -->
+    </classes>
+  </test> <!-- TestConfirmarInicioSesion(failed) -->
 </suite> <!-- Failed suite [Suite] -->

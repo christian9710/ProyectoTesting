@@ -22,16 +22,21 @@
     <parameter name="contrasenaCorrectaHumo" value="Olm1910."/>
 
 	<!--  TESTS HUMO-->
-    <test name="testInicioSesionIncorrecto">
+    <test name="TestInicioSesionCorrecto">
+       <parameter name="correo" value="CORREO"/>
+       <parameter name="contrasena" value="CONTRASENA"/>
+        <classes>
+            <class name="Test_Scenarios.Humo.TestInicioSesionCorrecto"/>
+        </classes>
+    </test>
+    
+       <test name="testInicioSesionIncorrecto">
         <classes>
             <class name="Test_Scenarios.Humo.TestValidacionesInicioSesion"/>
         </classes>
     </test>
     
-    
-
     <!--  TESTS FUNCIONALES-->
-    
           <!-- Código de prueba FUN-01 Nombre: Búsqueda de producto existente-->
 	    <test name="TestBusquedaProducto_Escenario1">
 	        <parameter name="producto" value="chocolate"/>
