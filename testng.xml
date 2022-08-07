@@ -34,9 +34,36 @@
         <classes>
             <class name="Test_Scenarios.Humo.TestValidacionesInicioSesion"/>
         </classes>
-    </test>
+    	</test>
+    	
+    	<test name="TestValidacionesInicioSesion">
+    	  <parameter name="correo" value="CORREO"/>
+       <parameter name="contrasena" value="CONTRASENA"/>
+        <classes>
+            <class name="Test_Scenarios.Humo.TestValidacionesInicioSesion"/>
+        </classes>
+       </test>
     
-    <!--  TESTS FUNCIONALES-->
+    <!--  TESTS Regresion-->
+    
+    
+    <test name="TestAgregarProductoInvitado">
+     <parameter name="correoCorrectoHumo" value="olman.personal@gmail.com"/>
+       <parameter name="contrasenaCorrectaHumo" value="Olm1910."/>
+        <classes>
+            <class name="Test_Scenarios.Regresion.TestAgregarProductoInvitado"/>
+        </classes>
+       </test>
+       
+        <test name="TestAgregarProductoUsuarioRegistrado">
+       <parameter name="correoCorrectoHumo" value="olman.personal@gmail.com"/>
+       <parameter name="contrasenaCorrectaHumo" value="Olm1910."/>
+        <classes>
+            <class name="Test_Scenarios.Regresion.TestAgregarProductoUsuarioRegistrado"/>
+        </classes>
+       </test>
+        <!--  TESTS FUNCIONALES-->
+
           <!-- Código de prueba FUN-01 Nombre: Búsqueda de producto existente-->
 	    <test name="TestBusquedaProducto_Escenario1">
 	        <parameter name="producto" value="chocolate"/>
