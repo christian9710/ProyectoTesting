@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Test_Scenarios.Test_ProductosPorPrecio_Escenario1">
+      <class name="Test_Scenarios.Unitarios.TestAbrirSeccionRecetas">
         <methods>
-          <include name="testEscenario1"/>
           <include name="InitialSetUp"/>
           <include name="teardown"/>
-          <include name="methodLevelSetUp"/>
+          <include name="SetUp"/>
+          <include name="TestRecetas"/>
         </methods>
-      </class> <!-- Test_Scenarios.Test_ProductosPorPrecio_Escenario1 -->
+      </class> <!-- Test_Scenarios.Unitarios.TestAbrirSeccionRecetas -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

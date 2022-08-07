@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-01T23:52:02 CST" name="Suite" finished-at="2022-08-01T23:52:49 CST" duration-ms="47125">
+  <suite started-at="2022-08-06T20:32:08 CST" name="Suite" finished-at="2022-08-06T20:32:37 CST" duration-ms="29408">
     <groups>
     </groups>
-    <test started-at="2022-08-01T23:52:02 CST" name="TestFiltroProductosPorMarca" finished-at="2022-08-01T23:52:49 CST" duration-ms="47125">
-      <class name="Test_Scenarios.Funcionales.TestFiltrarProductosPorMarca">
-        <test-method is-config="true" signature="InitialSetUp(java.lang.String,java.lang.String)[pri:0, instance:Test_Scenarios.Funcionales.TestFiltrarProductosPorMarca@7a5ceedd]" started-at="2022-08-01T23:52:02 CST" name="InitialSetUp" finished-at="2022-08-01T23:52:27 CST" duration-ms="24670" status="PASS">
+    <test started-at="2022-08-06T20:32:08 CST" name="TestConfirmarInicioSesion" finished-at="2022-08-06T20:32:37 CST" duration-ms="29408">
+      <class name="Test_Scenarios.Unitarios.TestConfirmarInicioSesion">
+        <test-method is-config="true" signature="InitialSetUp(java.lang.String,java.lang.String)[pri:0, instance:Test_Scenarios.Unitarios.TestConfirmarInicioSesion@4f49f6af]" started-at="2022-08-06T20:32:08 CST" name="InitialSetUp" finished-at="2022-08-06T20:32:16 CST" duration-ms="8246" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,19 +23,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitialSetUp -->
-        <test-method is-config="true" signature="methodLevelSetUp()[pri:0, instance:Test_Scenarios.Funcionales.TestFiltrarProductosPorMarca@7a5ceedd]" started-at="2022-08-01T23:52:27 CST" name="methodLevelSetUp" finished-at="2022-08-01T23:52:27 CST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="methodLevelSetUp()[pri:0, instance:Test_Scenarios.Unitarios.TestConfirmarInicioSesion@4f49f6af]" started-at="2022-08-06T20:32:16 CST" name="methodLevelSetUp" finished-at="2022-08-06T20:32:16 CST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodLevelSetUp -->
-        <test-method signature="testEscenario1()[pri:0, instance:Test_Scenarios.Funcionales.TestFiltrarProductosPorMarca@7a5ceedd]" started-at="2022-08-01T23:52:27 CST" name="testEscenario1" finished-at="2022-08-01T23:52:49 CST" duration-ms="22279" status="PASS">
+        <test-method signature="ConfirmationTest(java.lang.String,java.lang.String)[pri:0, instance:Test_Scenarios.Unitarios.TestConfirmarInicioSesion@4f49f6af]" started-at="2022-08-06T20:32:16 CST" name="ConfirmationTest" finished-at="2022-08-06T20:32:36 CST" duration-ms="20487" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[crodrigueza2@ucenfotec.ac.cr]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[hola101215]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testEscenario1 -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Scenarios.Funcionales.TestFiltrarProductosPorMarca@7a5ceedd]" started-at="2022-08-01T23:52:49 CST" name="teardown" finished-at="2022-08-01T23:52:49 CST" duration-ms="111" status="PASS">
+        </test-method> <!-- ConfirmationTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Scenarios.Unitarios.TestConfirmarInicioSesion@4f49f6af]" started-at="2022-08-06T20:32:36 CST" name="teardown" finished-at="2022-08-06T20:32:37 CST" duration-ms="638" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- Test_Scenarios.Funcionales.TestFiltrarProductosPorMarca -->
-    </test> <!-- TestFiltroProductosPorMarca -->
+      </class> <!-- Test_Scenarios.Unitarios.TestConfirmarInicioSesion -->
+    </test> <!-- TestConfirmarInicioSesion -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -35,16 +35,6 @@ public class BasePage {
     	wait.until(ExpectedConditions.visibilityOfElementLocated(element));
     	return driver.findElement(element).isDisplayed();
     }
-    
-    public void pressEnterOnElement(By element)
-    {
-    	driver.findElement(element).sendKeys(Keys.ENTER);
-    }
-    
-    public void searchValue(By element, String text)
-    {
-    	driver.findElement(element).sendKeys(text, Keys.ENTER);
-    	
-    }
+
 
 }

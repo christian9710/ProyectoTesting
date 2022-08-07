@@ -7,8 +7,8 @@
     <parameter name="Url" value="https://www.automercado.cr/"/>
   <!--  Credenciales -->
     <!--  Credentials a cambiar -->
-    <parameter name="correo" value="correo@correo.com"/>
-    <parameter name="contrasena" value="ALGUNA-CONTRASENA"/>
+    <parameter name="correo" value="crodrigueza2@ucenfotec.ac.cr"/>
+    <parameter name="contrasena" value="hola101215"/>
 
   <!--  TESTS -->
   
@@ -18,9 +18,9 @@
      <!-- Código de prueba INT-05 Nombre: Crear lista de compras -->
      <!-- Código de prueba INT-06 Nombre: Agregar producto desde lista-->
           <!-- Código de prueba FUN-02 Nombre: Filtro de productos por marca -->
-    <test name="TestFiltroProductosPorMarca">
+    <test name="TestConfirmarInicioSesion">
         <classes>
-            <class name="Test_Scenarios.Funcionales.TestFiltrarProductosPorMarca"/>
+            <class name="Test_Scenarios.Unitarios.TestConfirmarInicioSesion"/>
         </classes>
     </test>
     
