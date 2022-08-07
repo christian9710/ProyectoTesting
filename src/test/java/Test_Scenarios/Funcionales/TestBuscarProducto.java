@@ -18,7 +18,10 @@ public class TestBuscarProducto extends BaseTest {
 	        Thread.sleep(5000);
 	        BPP.buscarProducto(producto);
 	        Thread.sleep(5000);
+	        BPP.clickResultado();
+	        Thread.sleep(5000);
 	        BPP.encontrarResultado();
+	        Thread.sleep(5000);
 	        
 	    }
 

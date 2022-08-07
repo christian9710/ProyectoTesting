@@ -18,7 +18,7 @@ public class HomePage  extends BasePage {
     By ComprarPorCategoriaButton = By.xpath("//img[@src='../images/lineas.png']");
     By FrutasVerdurasCategoriaOpt = By.xpath(" //li[@class='multilevel-dropdown-item has-children'][text()='Frutas y verduras']");
     By VerdurasCategoriaSubOpt =By.xpath("//li[text()='Frutas']");
-    By CerrarReproductorModal =By.xpath("//img[@src='images/audio/close.svg']");
+    By CerrarReproductorModal =By.xpath("//button[@class='btn am-button solid ng-star-inserted']");
     public By CarritoCompraButton =By.xpath("//div[@ng-controller='automercadoCartController']/div[@ng-click='openSummary();']");
     By ConcluirCompraButton =By.xpath("//a[@ng-click='openSummary()']");
     By TiendaHogarCategoriaOpt = By.xpath(" //li[@class='multilevel-dropdown-item has-children'][text()='Tienda y hogar']");

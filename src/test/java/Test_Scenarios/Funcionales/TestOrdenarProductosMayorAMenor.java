@@ -1,6 +1,5 @@
 package Test_Scenarios.Funcionales;
 
-import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -13,14 +12,14 @@ public class TestOrdenarProductosMayorAMenor extends BaseTest {
 	public OrdenarProductosPorPrecioPage OPPP;
 
     @Test
-                                                                public void testEscenario1() throws InterruptedException {
-    	OPPP.clickOpcionBebidas();
+    public void testEscenario1() throws InterruptedException {
+    	OPPP.clickOpcioComidasPreparadas();
+        Thread.sleep(10000);
+        OPPP.clickSushi();
         Thread.sleep(5000);
         OPPP.clickOpcionOrdenarPorPrecio();
-        Thread.sleep(5000);
-        OPPP.seleccionarDeMayorAMenor();
         Thread.sleep(10000);
-        assertTrue(OPPP.encontrarLataMelocoton(),"No se encuentra");
+        OPPP.seleccionarDeMayorAMenor();
         
     }
 
