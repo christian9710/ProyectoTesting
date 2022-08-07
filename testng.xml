@@ -63,4 +63,31 @@
 	        </classes>
 	    </test>
     
+    	<!--  TESTS DE Unitarios-->
+	
+		<!-- Código de prueba UT-01' Nombre: Iniciar Session-->
+	    <test name="TestAbrirSeccionInicioSesion">
+	        <classes>
+	            <class name="Test_Scenarios.Unitarios.TestAbrirSeccionInicioSesion"/>
+	        </classes>
+	    </test>
+		
+
+   		<!-- Código de prueba UT_04' Nombre: Menú principal - sección Recetas-->
+	    <test name="TestAbrirSeccionRecetas">
+	        <classes>
+	            <class name="Test_Scenarios.Unitarios.TestAbrirSeccionRecetas"/>
+	        </classes>
+	    </test>
+	    
+		<!-- Código de prueba UT-02' Nombre: Iniciar Session-->
+	    <test name="TestConfirmarInicioSesion">
+	       <parameter name="correo" value="CORREO"/>
+           <parameter name="contrasena" value="CONTRASENA"/>
+	        <classes>
+	            <class name="Test_Scenarios.Unitarios.TestConfirmarInicioSesion"/>
+	        </classes>
+	    </test>
+    
+    
 </suite> <!-- Suite -->
